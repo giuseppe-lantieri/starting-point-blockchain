@@ -1,6 +1,6 @@
 import { useContractWrite, usePrepareContractWrite, useWaitForTransaction } from "wagmi"
 
-export function useWrite(address, abi, functionName, args, enabled, value) {
+export function useWrite({address, abi, functionName, args, enabled, value}) {
 	const {
 		config,
 		error: prepareError,
